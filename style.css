@@ -187,7 +187,7 @@ ul li a {
     color: inherit;
 }
 
-a:hover {
+.project-images a:hover {
     background: steelblue;
 }
 
@@ -264,6 +264,10 @@ footer {
         right: 20px;
     }
 
+    nav .mainMenu .closeMenu:hover {
+        color: steelblue;
+    }
+
     nav .openMenu {
         display: block;
     }
@@ -284,6 +288,7 @@ footer {
     .icons i {
         display: inline-block;
         padding: 12px;
+        color: darkorchid;
     }
 
     main {
