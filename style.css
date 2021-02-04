@@ -22,7 +22,7 @@ header h1 {
 }
 
 #logo h1 {
-    padding-top: 2px;
+    padding-top: 10px;
     font-size: 40px;
     animation: logo-change 6s infinite;
 }
@@ -148,9 +148,44 @@ p {
     font-size: 18px;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#local-library, #decoder-ring, #pomodoro-timer, #dnd {
+    display: inline-flex;
+    display: column;
+    flex-wrap: wrap;
+    width: 24%;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    background: steelblue;
+}
+
+
+
+.project-images img {
+    padding-top: 20px;
+    width: 90%;
+    height: 400px;
+}
+
 .socials ul li {
     display: inline-flex;
-
 }
 
 .socials {
@@ -266,4 +301,18 @@ footer {
     .right-column {
         width: 100%;
     }
+    
+    #projects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #local-library, #decoder-ring, #pomodoro-timer, #dnd {
+        display: block;
+        width: 100%;
+    }
+
+
+
 }
