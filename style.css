@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* Mobile-first design */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #000;
+    width: 100%;
+}
+
+header h1 {
+    font-family: "Press Start 2P", cursive;
+    color: #fff;
+}
+
+#logo h1 {
+    padding-top: 2px;
+    font-size: 40px;
+    animation: logo-change 6s infinite;
+}
+
+@keyframes logo-change {
+    0% { color: white; }
+    50% { color: steelblue; }
+}
+
+nav {
+    /* background: #000; */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover {
+    background:steelblue;
+}
+
+nav .openMenu {
+    color: steelblue;
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fab:hover {color: steelblue;}
+
+
+/* MAIN CSS */
+/*          */
+section {
+    border-bottom: 1px solid steelblue;
+    margin: 0 20px 0 20px;
+    width: 100%;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+div {
+    display: block;
+}
+
+#about-container {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+.left-column {
+    order: 1;
+    width: 60%;
+}
+
+.right-column {
+    order: 2;
+    width: 20%;
+}
+
+#profile-img img {
+    width: 200px;
+    height: auto;
+    border-radius: 25%;
+}
+
+#knowledge-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#languages, #skills {
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+}
+
+
+/* MEDIA QUERY: RESPONSIVE DESIGN   */
+/*          SMALL SCREENS           */
+@media (max-width: 762px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: steelblue;
+        font-size: 1.6rem;
+    }
+
+    #logo h1 {
+        padding: 10px 0 10px 10px;        
+    }
+
+    .fa-bars {
+        padding: 15px 5px 0 0;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    main {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    #profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #about h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* #knowledge-container {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    /* div #languages {
+        
+    }
+
+    div #skills {
+        
+    } */
+
+    .item {
+        flex: 1;
+    }
+    
+    .item-double {
+        flex: 2;
+    }
+
+
+    .left-column {
+        width: 100%;
+    }
+    
+    .right-column {
+        width: 100%;
+    }
+    .knowledge-margin {
+        padding-left: 10px;
+    }
+}

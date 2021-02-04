@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Hotzler | Software Engineer</title>
+    <script src="https://kit.fontawesome.com/3d6b468046.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body id="home">
+    <!-- Header/Nav section -->
+    <header>
+        <nav>
+            <div id="logo"><h1>Andy Hotzler</h1>
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times-circle"></i></div>
+            <span class="icons">
+                <a href="https://linkedin.com/in/andyhotzler" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/bytesizeculture" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/ahotzler25" target="_blank"><i class="fab fa-github"></i></a>
+            </span>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <section class='about-section'>
+            <h2>About Me</h2>
+            <div class='about-container'>
+                <div class='right-column item'>
+                    <div id="profile-img">
+                        <img src="./images/profile-pic.jpg"  alt="me looking pensive"></img>
+                    </div>
+                </div>
+                <div class='about-text left-column item-double'>
+                    <p>I'm Andy Hotzler, a full-stack software engineer located in northern 
+                        Minnesota with my domestic shorthair, Dahlia.</p>
+                    <br />
+                    <p>After graduating from Bemidji State University with three Bachelors 
+                        and a minor, I began relearning web development and followed my interests 
+                        into game and software development. After almost two years of Udemy courses 
+                        and tutorial hell on YouTube and freecodecamp.org, I felt like I was only
+                        placing pieces of a much larger puzzle together while being unable to see the larger 
+                        picture. After researching bootcamps, curriculums, and job markets in Minneapolis and 
+                        Winnipeg, I made the commitment to programming and enrolled in Thinkful's engineering 
+                        immersion program.</p>
+                    <br />
+                    <p>When I'm not coding or studying new languages/frameworks, I can be found 
+                        butchering the German language, running it down Summoner's Rift in 
+                        <em>League of Legends</em>, saving Tamriel in <em>Elder Scrolls 
+                        Online</em>, or incorrectly sequencing my plays in <em>Magic: the 
+                        Gathering</em>.</p>
+                    <br />
+                </div>
+
+                <div id="knowledge-container"> 
+                    <div id="languages">
+                        <h4>Languages:</h3>
+                        <ul>
+                            <li>JavaScript/ES6</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                        </ul>
+                    </div>
+                    <div id="skills">
+                        <h4>Other:</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Bootstrap</li>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                            <li>PostgreSQL</li>
+                            <li>Mocha</li>
+                            <li>Chai</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+                <ul class="project-images">
+                    <div id="local-library-img">
+                        <li>Project: Local Library</li>
+                    </div id="decoder-ring-img">
+                    <div>
+                        <li>Project: Decoder Ring</li>
+                    </div>
+                    <div id="pomodor-timer-img">    
+                        <li>Project: Pomodoro Timer</li>
+                    </div>
+                    <div id="dnd-img">    
+                        <li>Project: D&D Browser Game</li>
+                    </div>
+                </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form >
+                Name:
+                <br />
+                <label for="name">
+                <input id="name" name="name" required type="text" placeholder="Enter name"/>
+                </label>
+                <br />
+                <br />
+                Email:
+                <br />
+                <label for="email">
+                <input id="email" name="email" required type="email" placeholder="Enter email"/> 
+                </label>
+                <br />
+                <br />
+
+                Your Message:
+                <br />
+                <label for="content">
+                </label>
+                <textarea id="content" name="content" 
+                    type="text" cols="40" rows="7" placeholder="Like my page? Disliked it? Let me know."></textarea>
+                <br />
+                <button type="submit">Submit</button>
+            </form>
+            <br />
+            <div class='socials'>
+                <h4>You can also catch me at any of the following:</h4>
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>Twitter</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>© Andy Hotzler, 2021. All Rights Reserved.</p>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
