@@ -115,7 +115,7 @@ ul {
     display: inline-block;
     order: 1;
     width: 70%;
-    padding-top: 20px;
+    padding: 20px 20px 0 0;
 }
 
 .right-column {
@@ -235,7 +235,7 @@ footer {
 
 /* MEDIA QUERY: RESPONSIVE DESIGN   */
 /*          SMALL SCREENS           */
-@media (max-width: 762px) {
+@media all and (max-width: 762px) {
 
     * {
         margin: 0;

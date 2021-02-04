@@ -13,7 +13,8 @@
     <!-- Header/Nav section -->
     <header>
         <nav>
-            <div id="logo"><h1>Andy Hotzler</h1>
+            <div id="logo">
+                <h1>Andy Hotzler</h1>
             </div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>
                 <ul class="mainMenu">
@@ -28,13 +29,13 @@
                 <a href="https://github.com/ahotzler25" target="_blank"><i class="fab fa-github"></i></a>
             </span>
                 </ul>
-            </div>
+            
         </nav>
     </header>
 
     <!-- Main section -->
     <main>
-        <section class='about-section'>
+        <section id="about" class='about-section'>
             <h2>About Me</h2>
             <div class='about-container'>
                 <div class='right-column'>
@@ -44,9 +45,13 @@
                 </div>
                 <div class='left-column'>
                     <p>I'm Andy Hotzler, a full-stack software engineer located in northern 
-                        Minnesota with my domestic shorthair, Dahlia. I specialize in React, specializing
-                        in front-end development and design. Clients will understand
-                        that a poorly designed, functional app--even if it's game-changing--will only be half 
+                        Minnesota with my domestic shorthair, Dahlia. I specialize in React and enjoy
+                        focusing on front-end development and design. Two heads are always better than one,
+                        and I enjoy reviewing code with colleagues to not only see how it can be improved,
+                        but also different approaches to reach a solution. Working along has advantages,
+                        but the ability to learn from colleagues and professionals isn't as likely.</p>
+                    <br />
+                    <p>Clients will understand that a poorly designed, functional app--even if it's game-changing--will only be half 
                         as successful as it could be if it were well-designed. As a designer and a developer,
                         my job is to 1) help clients attain their wants/needs, and 2) make their project
                         look good.</p>
@@ -63,7 +68,7 @@
                     <p>When I'm not coding or studying new languages/frameworks, I can be found 
                         butchering the German language, running it down Summoner's Rift in 
                         <em>League of Legends</em>, saving Tamriel in <em>Elder Scrolls 
-                        Online</em>, or incorrectly sequencing my plays in <em>Magic: the 
+                        Online</em>, or incorrectly sequencing my plays in <em>Magic: The 
                         Gathering</em>.</p>
                     <br />
                 </div>
@@ -75,7 +80,7 @@
                     <h4>Languages:</h3>
                     <ul>
                         <li>JavaScript</li>
-                        <li>EcmaScript 6</li>
+                        <li>ECMAScript 6</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
                     </ul>
@@ -98,7 +103,8 @@
 
 
         <!-- PORTFOLIO SECTION -->
-        <section id="portfolio projects">
+        <section id="portfolio">
+            <div id ="projects">
             <h2>Portfolio</h2>
                 <ul class="project-images">
                     <div id="local-library">
@@ -118,6 +124,7 @@
                         <li><a href="./projects.html">Project: D&D Browser Game</a></li>
                     </div>
                 </ul>
+            </div>
         </section>
 
 
@@ -145,7 +152,7 @@
                 <label for="content">
                 </label>
                 <textarea id="content" name="content" 
-                    type="text" cols="40" rows="7" placeholder="Like my page? Disliked it? Let me know."></textarea>
+                    cols="40" rows="7" placeholder="Like my page? Disliked it? Let me know."></textarea>
                 <br />
                 <button type="submit">Submit</button>
             </form>
