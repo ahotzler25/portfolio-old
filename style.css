@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #000;
+}
+
+header h1 {
+    font-family: "Press Start 2P", cursive;
+}
+
+@keyframes logo-change {
+    0% { color: white; }
+    50% { color: steelblue; }
+}
+
+#logo h1 {
+    /* padding-top: 10px; */
+    font-size: 40px;
+    animation: logo-change 6s infinite;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    /* background: black; */
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .myLinks a:hover {
+    background-color: steelblue;
+    color: white;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+
+/* #profile-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+    padding: 10px 0;
+} */
+
+#about h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+#knowledge-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+#languages, #skills {
+    width: 50%;
+}
+
+
+.left-column {
+    width: 100%;
+}
+
+.right-column {
+    width: 100%;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#local-library, #decoder-ring, #pomodoro-timer, #dnd {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.project-desc p {
+    width: 100%;
+}
+
+.github-repo {
+    text-align: left;
+}
+
+
+
+
+
+/* MAIN CSS */
+/*          */
+main {
+    background-color: #f5f5f5;
+}
+
+h2, h3, h4, p, li, a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    border-bottom: 1px solid steelblue;
+    padding: 0 20px 10px 20px;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;
+    color: steelblue;
+}
+
+ul {
+    list-style-type: square;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-column {
+    display: inline-block;
+    order: 1;
+    width: 70%;
+    padding: 20px 20px 0 0;
+}
+
+.right-column {
+    display: inline-block;
+    order: 2;
+    width: 30%;
+}
+
+#profile-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 25%;
+}
+
+#knowledge-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#knowledge-container h3 {
+    font-size: 22px;
+}
+
+#languages, #skills {
+    display: flex;
+    width: 25%;
+}
+
+#knowledge-container h4 {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+
+/* PROJECTS SECTION */
+/*                  */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#local-library, #decoder-ring, #pomodoro-timer, #dnd {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 24%;
+    text-align: center;
+}
+
+
+
+.project-desc {
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-images a:hover {
+    background: steelblue;
+}
+
+.project-desc p {
+    text-align: left;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+div h3 {
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.project-images img {
+    padding-top: 20px;
+    width: 90%;
+    height: 400px;
+}
+
+.github-repo {
+    padding-top: 20px;
+}
+.socials ul li {
+    display: inline-flex;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY: RESPONSIVE DESIGN   */
+/*                                  */
+@media all and (min-width: 768px) {
+    
+    * {
+        width: 100%;
+    }
+
+
+    
+
+
+
+    main {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    div {
+        display: flex;
+    }
+
+    #profile-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* #knowledge-container {
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+    } */
+
+    /* #languages, #skills {
+        width: 50%;
+    } */
+
+
+    /* .left-column {
+        width: 100%;
+    }
+    
+    .right-column {
+        width: 100%;
+    } */
+    
+    #projects {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    
+    #local-library, #decoder-ring, #pomodoro-timer, #dnd {
+        display: inline-flex;
+    }
+
+    .project-desc p {
+        width: auto;
+    }
+}
