@@ -115,6 +115,7 @@ ul {
     display: inline-block;
     order: 1;
     width: 70%;
+    padding-top: 20px;
 }
 
 .right-column {
@@ -132,7 +133,11 @@ ul {
 #knowledge-container {
     display: flex;
     flex-direction: row;
-    
+    font-size: 18px;
+}
+
+#knowledge-container h4 {
+    font-size: 22px;
 }
 
 #languages, #skills {
