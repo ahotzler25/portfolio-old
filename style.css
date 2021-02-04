@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: auto;
 }
 
 html {
@@ -14,18 +14,10 @@ html {
 
 header {
     background: #000;
-    width: 100%;
 }
 
 header h1 {
     font-family: "Press Start 2P", cursive;
-    color: #fff;
-}
-
-#logo h1 {
-    padding-top: 10px;
-    font-size: 40px;
-    animation: logo-change 6s infinite;
 }
 
 @keyframes logo-change {
@@ -33,46 +25,115 @@ header h1 {
     50% { color: steelblue; }
 }
 
-nav {
-    /* background: #000; */
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
+#logo h1 {
+    /* padding-top: 10px; */
+    font-size: 40px;
+    animation: logo-change 6s infinite;
 }
 
-nav .mainMenu {
-    display: flex;
-    list-style: none;
-}
-
-nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.5rem;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    /* background: black; */
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .myLinks a:hover {
+    background-color: steelblue;
+    color: white;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+
+/* #profile-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
+    padding: 10px 0;
+} */
+
+#about h2 {
+    font-size: 20px;
+    text-align: center;
 }
 
-nav .mainMenu li a:hover {
-    background:steelblue;
+p {
+    font-size: 14px;
 }
 
-nav .openMenu {
-    color: steelblue;
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
+#knowledge-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
 }
 
-nav .mainMenu .closeMenu, .icons i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
+#languages, #skills {
+    width: 50%;
 }
 
-.fab:hover {color: steelblue;}
+
+.left-column {
+    width: 100%;
+}
+
+.right-column {
+    width: 100%;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#local-library, #decoder-ring, #pomodoro-timer, #dnd {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.project-desc p {
+    width: 100%;
+}
+
+.github-repo {
+    text-align: left;
+}
+
+
 
 
 
@@ -91,9 +152,7 @@ section {
     padding: 0 20px 10px 20px;
 }
 
-div {
-    display: flex;
-}
+
 
 h2 {
     text-align: center;
@@ -173,10 +232,7 @@ p {
     text-align: center;
 }
 
-/* .local-library ul {
-    display: flex;
-    flex-direction: column;
-} */
+
 
 .project-desc {
     display: block;
@@ -196,7 +252,6 @@ ul li a {
 }
 
 .project-desc p {
-    width: 100%;
     text-align: left;
     font-size: 16px;
     padding-right: 10px;
@@ -237,63 +292,26 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
 /* MEDIA QUERY: RESPONSIVE DESIGN   */
-/*          SMALL SCREENS           */
-@media all and (max-width: 762px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
+/*                                  */
+@media all and (min-width: 768px) {
     
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        transition: top 1s ease;
-        display: none;
+    * {
+        width: 100%;
     }
 
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
 
-    nav .mainMenu .closeMenu:hover {
-        color: steelblue;
-    }
+    
 
-    nav .openMenu {
-        display: block;
-    }
-    nav .mainMenu li a:hover {
-        background: none;
-        color: steelblue;
-        font-size: 1.6rem;
-    }
 
-    #logo h1 {
-        padding: 10px 0 10px 10px;        
-    }
-
-    .fa-bars {
-        padding: 15px 5px 0 0;
-    }
-
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-        color: darkorchid;
-    }
 
     main {
         width: 100%;
@@ -301,7 +319,7 @@ footer {
     }
 
     div {
-        display: block;
+        display: flex;
     }
 
     #profile-img {
@@ -312,51 +330,35 @@ footer {
         padding: 10px 0;
     }
 
-    #about h2 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    #knowledge-container {
+    /* #knowledge-container {
         display: flex;
         flex-direction: row;
         padding-left: 20px;
-    }
+    } */
 
-    #languages, #skills {
+    /* #languages, #skills {
         width: 50%;
-    }
+    } */
 
 
-    .left-column {
+    /* .left-column {
         width: 100%;
     }
     
     .right-column {
         width: 100%;
-    }
+    } */
     
     #projects {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
-        width: 100%;
     }
     
     #local-library, #decoder-ring, #pomodoro-timer, #dnd {
-        display: block;
-        width: 100%;
-        padding-top: 50px;
+        display: inline-flex;
     }
 
     .project-desc p {
-        width: 100%;
-    }
-
-    .github-repo {
-        text-align: left;
+        width: auto;
     }
 }

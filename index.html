@@ -13,27 +13,24 @@
     <!-- Header/Nav section -->
     <header>
         <nav>
-            <div id="logo">
-                <h1>Andy Hotzler</h1>
-            </div>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
-                <ul class="mainMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            <div class="closeMenu"><i class="fa fa-times-circle"></i></div>
-            <div class="icons">
-                <ul class="mainMenu">
-                    <li><a href="https://linkedin.com/in/andyhotzler" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/bytesizeculture" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/ahotzler25" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
-            </div>
-            
+            <div class="topnav">
+                <!-- <a href="#home" class="active">Logo</a> -->
+                
+                <a href="#home" class="active"><h1>Andy Hotzler</h1></a>
+                
+            <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+            </div>            
         </nav>
-    </header>
 
     <!-- Main section -->
     <main>
@@ -42,7 +39,7 @@
             <div class='about-container'>
                 <div class='right-column'>
                     <div id="profile-img">
-                        <img src="./images/profile-pic.jpg"  alt="me looking pensive" />
+                        <!-- <img src="./images/profile-pic.jpg"  alt="me looking pensive" /> -->
                     </div>
                 </div>
                 <div class='left-column'>
@@ -53,7 +50,7 @@
                         but also different approaches to reach a solution. Working alone has advantages,
                         but collaborating with a dedicated team cannot be matched.</p>
                     <br />
-                    <p>Clients will understand that a poorly designed, functional app--even if it's game-changing--will only be half 
+                    <p>Clients understand that a poorly designed, functional app--even if it's game-changing--will only be half 
                         as successful as it could be if it were well-designed. As a designer and a developer,
                         my job is to 1) help clients attain their wants/needs, and 2) make their project
                         look good.</p>
