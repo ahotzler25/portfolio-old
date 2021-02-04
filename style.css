@@ -148,19 +148,29 @@ p {
     font-size: 18px;
 }
 
+/* PROJECTS SECTION */
+/*                  */
+
 #projects {
     display: flex;
     flex-direction: column;
     width: 100%;
-
 }
 
 #local-library, #decoder-ring, #pomodoro-timer, #dnd {
     display: inline-flex;
-    display: column;
     flex-wrap: wrap;
     width: 24%;
     text-align: center;
+}
+
+/* .local-library ul {
+    display: flex;
+    flex-direction: column;
+} */
+
+.project-desc {
+    display: block;
 }
 
 ul li {
@@ -176,7 +186,18 @@ a:hover {
     background: steelblue;
 }
 
+.project-desc p {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding-right: 10px;
+}
 
+div h3 {
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
 
 .project-images img {
     padding-top: 20px;
@@ -184,6 +205,9 @@ a:hover {
     height: 400px;
 }
 
+.github-repo {
+    padding-top: 20px;
+}
 .socials ul li {
     display: inline-flex;
 }
@@ -311,8 +335,14 @@ footer {
     #local-library, #decoder-ring, #pomodoro-timer, #dnd {
         display: block;
         width: 100%;
+        padding-top: 50px;
     }
 
+    .project-desc p {
+        width: 100%;
+    }
 
-
+    .github-repo {
+        text-align: left;
+    }
 }
