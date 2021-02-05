@@ -287,8 +287,8 @@ footer p {
 
     .project-images img {
         width: 100%;
-        height: 225px;
-        /* padding: 0 0 10px 40px; */
+        height: auto;
+        text-align: center;
     }
 
     .project-desc p {
@@ -303,13 +303,7 @@ footer p {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-
-    #local-library, #decoder-ring, #pomodoro-timer, #dnd {
-        display: inline-flex;
-        flex-wrap: wrap;
-        width: 24%;
-        text-align: center;
+        border: none;
     }
 
     footer {
@@ -320,11 +314,10 @@ footer p {
 }
 
 
-@media all and (min-width: 1220px) {
+@media all and (min-width: 1066px) {
     .project-images img {
-        width: 100%;
-        height: 100%;
-        padding-right: 0;
-        margin-right: 0;
+        width: 50%;
+        height: 350px;
+        text-align: center;
     }
 }
