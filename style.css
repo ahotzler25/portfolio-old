@@ -118,16 +118,18 @@ p {
     font-size: 14px;
 }
 
-#projects {
+#projects img {
     display: block;
     /* width: 100%; */
+    padding-bottom: 20px;
 }
 
 #local-library, #decoder-ring, #pomodoro-timer, #dnd {
     display: block;
     width: 100%;
-    padding-top: 50px;
 }
+
+
 
 h2 {
     text-align: center;
@@ -187,6 +189,8 @@ div h3 {
 .socials ul li {
     list-style: none;
 }
+
+
 
 footer {
     display: inline-flex;

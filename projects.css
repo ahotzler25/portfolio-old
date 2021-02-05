@@ -4,26 +4,33 @@
         display: block;
     }
 
-    #projects {
+    .project-images img  {
+        /* width: */
         text-align: center;
     }
 
     #projects img {
         width: 60%;
         height: 80%;
+        padding-top: 50px;
     }
 }
 
 @media all and (min-width: 1066px) {
     
-    .project-desc p {
-        font-size: 25px;
-        
-    }
-
+    
     #projects img {
+        padding-top: 50px;
         width: 50%;
         height: 100%;
+    }
+
+    .project-images img {
+        text-align: center;
+    }
+
+    .project-desc p {
+        font-size: 22px;
     }
 }
 
