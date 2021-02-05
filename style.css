@@ -82,7 +82,7 @@ section {
     border-bottom: 1px solid steelblue;
 }
 
-h2, h3, h4, p, li, a {
+h2, h3, h4, h5, h6 p, li, a {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -101,9 +101,6 @@ p {
     padding-top: 50px;
 }
 
-
-
-
 h2 {
     text-align: center;
     font-size: 32px;
@@ -111,9 +108,9 @@ h2 {
     color: steelblue;
 }
 
-
-
-
+h6 {
+    text-align: center;
+}
 
 #profile-img img {
     width: 300px;
@@ -198,14 +195,16 @@ footer {
     display: inline-flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
+    justify-content: center;
     background-color: #000;
     color: #fff;
-    height: 50px;
+    height: 100px;
 }
 
-
-
-
+footer p {
+    font-size: 14px;
+}
 
 
 
@@ -291,7 +290,11 @@ footer {
         text-align: center;
     }
 
-
+    footer {
+        padding: 0;
+        margin: 0;
+        height: 100px;
+    }
 
 
 }
