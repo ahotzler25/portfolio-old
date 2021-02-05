@@ -1,0 +1,29 @@
+@media all and (min-width: 768px) {
+
+    div {
+        display: block;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    #projects img {
+        width: 60%;
+        height: 80%;
+    }
+}
+
+@media all and (min-width: 1066px) {
+    
+    .project-desc p {
+        font-size: 25px;
+        
+    }
+
+    #projects img {
+        width: 50%;
+        height: 100%;
+    }
+}
+
