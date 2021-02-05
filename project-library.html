@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Hotzler | Software Engineer </title>
+    <script src="https://kit.fontawesome.com/3d6b468046.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="home">
+    <!-- Header/Nav section -->
+    <header>
+        <nav>
+            <div class="topnav">
+                <!-- <a href="#home" class="active">Logo</a> -->
+                
+                <a href="#home" class="active" id='logo'><h1>Andy Hotzler</h1></a>
+                
+            <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <div id="hamburger-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+            </div>            
+        </nav>
+    </header>
+
+    <main>
+    <section class="portfolio projects-page" id="projects">
+        <h2>Portfolio</h2>
+            <ul class="project-images">
+                <div id="local-library">
+                    <img src="./images/project-local-library-screenshot.JPG" alt='screenshot of local lib project' />
+                    <h3><a href="https://ahotzler25.github.io/project-local-library/public/index.html" target="_blank">Project: Local Library</a></h3>
+                    <div class='project-desc'>
+                        <p class='github-repo'><a href="https://github.com/ahotzler25/project-local-library" target="_blank">GitHub Repo</a></p>
+                        <br />
+                        <p><em>Description:</em></p>
+                        <p> A dummy website to mimic a library's administrative database. 
+                            The HTML and CSS were provided by the course, requiring only 
+                            the JavaScript be submitted. The completed project provided a 
+                            home page for general statistics regarding rented books and 
+                            popular categories. The "Stats by Book" page provided a list 
+                            of every book housed by the library, with a history of recent 
+                            borrowers, the author, genre, and if is is currently returned 
+                            or rented out. Finally, the "Stats by Account" page listed every 
+                            library member alphabetically by last name, with a profile picture, 
+                            general information about the member, as well as how many total 
+                            books have been borrowed by the member.</p>
+                        <br />
+                        <p><em>Purpose:</em></p>
+                        <p>This project was designed to test my ability to 
+                            create functions, higher order functions, various methods 
+                            (such as find, filter, and map), and utilize string literals, 
+                            among other learning objectives. I was to link the three 
+                            databases (each styled as an object within a .js file) and 
+                            output the results onto the web app. A total of 14 functions 
+                            across 3 files were necessary to complete, with an additional 
+                            helper function required to assist in at least one of the other 
+                            functions.</p>
+                    </div>
+                </div>
+            </ul>
+        </main>
+    
+        <!-- Footer section -->
+        <footer>
+         <p>© Andy Hotzler, 2021.</p> 
+         <p>All Rights Reserved.</p>
+     
+     </footer>
+         <script src="index.js"></script>
+         </body>
+     </html>
