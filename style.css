@@ -147,9 +147,9 @@ p {
 }
 
 
-
+/* * * * * * * * * * */
 /* PROJECTS SECTION */
-/*                  */
+/* * * * * * * * * */
 
 .project-desc {
     display: block;
@@ -189,8 +189,6 @@ div h3 {
     list-style: none;
 }
 
-
-
 footer {
     display: inline-flex;
     flex-direction: column;
@@ -200,7 +198,6 @@ footer {
     background-color: #000;
     color: #fff;
     height: 100px;
-    
 }
 
 footer p {
@@ -210,7 +207,6 @@ footer p {
 .projects-page {
     padding: 0 20px 0 20px;
 }
-
 
 form {
     width: 75%;
@@ -223,8 +219,6 @@ form #content {
 button {
     width: 50%;
 }
-
-
 
 
 
@@ -338,6 +332,5 @@ button {
     .project-images img {
         width: 75%;
         height: 300px;
-        
     }
 }
