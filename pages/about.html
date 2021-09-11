@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Hotzler | Software Engineer</title>
     <script src="https://kit.fontawesome.com/3d6b468046.js" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
+    <link href="../style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="home">
@@ -20,10 +19,11 @@
                 
             <!-- Navigation links (hidden by default) -->
                     <div id="myLinks">
-                        <a href="./index.html#home">Home</a>
-                        <a href="./index.html#about">About</a>
-                        <a href="./index.html#portfolio">Portfolio</a>
-                        <a href="./index.html#contact">Contact</a>
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <!-- <a href="./projects.html">Projects</a> -->
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./contact.html">Contact</a>
                     </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                     <div id="hamburger-menu">
@@ -39,11 +39,11 @@
         <section id="about" class='about-section'>
             <h2>About Me</h2>
             <div class='about-container'>
-                <div class='right-column'>
+                <!-- <div class='right-column'>
                     <div id="profile-img">
                         <img src="./images/profile-pic.jpg"  alt="me looking pensive" />
                     </div>
-                </div>
+                </div> -->
                 <div class='left-column'>
                     <p>I'm Andy Hotzler, a full-stack software engineer located in northern 
                         Minnesota with my domestic shorthair, Dahlia. I specialize in React and enjoy
@@ -76,7 +76,6 @@
                         Gathering</em>.</p>
                     <br />
                 </div>
-                
             </div>
             <!-- <div id="knowledge-container"> 
                 <p>
@@ -104,67 +103,6 @@
             </div> -->
         </section>
 
-
-        <!-- PORTFOLIO SECTION -->
-        <section id="portfolio">
-            <div id ="projects">
-                <h2>Portfolio</h2>
-                <h5>(Click project title to see details about the project.)</h5>
-                <br />
-                <br />
-                <div class="project-images">
-                    <div id="local-library">
-                        <img src="./images/project-local-library-screenshot.JPG" alt='screenshot of local lib project' />
-                        <p><a href="./projects.html#local-library">Project: Local Library</a></p>
-                    </div>
-                    <div id='decoder-ring'>
-                        <img src='./images/decoder-ring-img.png' alt="screenshot of decoder ring app"/>
-                        <p><a href="./projects.html#decoder-ring">Project: Decoder Ring</a></p>
-                    </div>
-                    <div id="pomodoro-timer">    
-                        <img src="./images/pomodoro-img.jpg" alt="screenshot of future Pomodoro app"/>
-                        <p><a href="./projects.html#pomodoro-timer">Project: Pomodoro Timer</a></p>
-                    </div>
-                    <div id="dnd">    
-                        <img src='./images/dnd-img.jpg' alt="screenshot of future DND app"/>
-                        <p><a href="./projects.html#dnd">Project: D&D Browser Game</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- CONTACT SECTION -->
-
-        <br />
-        <br />
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="https://formspree.io/f/xeqpdror" method="post">
-                Name:
-                <br />
-                <label for="name">
-                <input id="name" name="name" required type="text" placeholder="Enter name"/>
-                </label>
-                <br />
-                <br />
-                Email:
-                <br />
-                <label for="email">
-                <input id="email" name="email" required type="email" placeholder="Enter email"/> 
-                </label>
-                <br />
-                <br />
-
-                Your Message:
-                <br />
-                <label for="content">
-                </label>
-                <textarea id="content" name="content" 
-                    cols="20" rows="7" placeholder="Like my page? Disliked it? Let me know."></textarea>
-                <br />
-                <button type="submit">Submit</button>
-            </form>
             <br />
             <div class='socials'>
                 <h3>You can also catch me at any of the following:</h3>
@@ -184,6 +122,6 @@
         <p>All Rights Reserved.</p>
 
     </footer>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Hotzler | Software Engineer</title>
+    <script src="https://kit.fontawesome.com/3d6b468046.js" crossorigin="anonymous"></script>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="home">
+    <!-- Header/Nav section -->
+    <header>
+        <nav>
+            <div class="topnav">
+                <!-- <a href="#home" class="active">Logo</a> -->
+                
+                <a href="#home" class="active" id='logo'><h1>Andy Hotzler</h1></a>
+                
+            <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <!-- <a href="./projects.html">Projects</a> -->
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <div id="hamburger-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+            </div>            
+        </nav>
+    </header>
+
+        <!-- CONTACT SECTION -->
+
+        <br />
+        <br />
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xeqpdror" method="post">
+                Name:
+                <br />
+                <label for="name">
+                <input id="name" name="name" required type="text" placeholder="Enter name"/>
+                </label>
+                <br />
+                <br />
+                Email:
+                <br />
+                <label for="email">
+                <input id="email" name="email" required type="email" placeholder="Enter email"/> 
+                </label>
+                <br />
+                <br />
+
+                Your Message:
+                <br />
+                <label for="content">
+                </label>
+                <textarea id="content" name="content" 
+                    cols="20" rows="7" placeholder="Like my page? Disliked it? Let me know."></textarea>
+                <br />
+                <button type="submit">Submit</button>
+            </form>
+            <br />
+            <div class='socials'>
+                <h3>You can also catch me at any of the following:</h3>
+                <div>
+                    <p><a href="mailto:ahotzler@gmail.com">Email</a></p>
+                    <p><a href="https://linkedin.com/in/andyhotzler" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://twitter.com/bytesizeculture" target="_blank">Twitter</a></p>
+                    <p><a href="https://github.com/ahotzler25" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>© Andy Hotzler, 2021.</p> 
+        <p>All Rights Reserved.</p>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

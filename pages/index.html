@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Hotzler | Software Engineer</title>
+    <script src="https://kit.fontawesome.com/3d6b468046.js" crossorigin="anonymous"></script>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="home">
+    <!-- Header/Nav section -->
+    <header>
+        <nav>
+            <div class="topnav">
+                <!-- <a href="#home" class="active">Logo</a> -->
+                
+                <a href="#home" class="active" id='logo'><h1>Andy Hotzler</h1></a>
+                
+            <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <!-- <a href="./projects.html">Projects</a> -->
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <div id="hamburger-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+            </div>            
+        </nav>
+    </header>
+    <!-- Main section -->
+    <main>
+        <section id="about" class='about-section'>
+            <h2>About Me</h2>
+            <div class='about-container'>
+                <!-- <div class='right-column'>
+                    <div id="profile-img">
+                        <img src="./images/profile-pic.jpg"  alt="me looking pensive" />
+                    </div>
+                </div> -->
+                <div class='left-column'>
+                    <p>I'm Andy Hotzler, a full-stack software engineer located in northern 
+                        Minnesota with my domestic shorthair, Dahlia. I specialize in React and enjoy
+                        studying UX/UI design. Two heads are always better than one,
+                        and I enjoy reviewing code with colleagues to not only see how it can be improved,
+                        but also how different approaches can reach a solution. Working alone has advantages,
+                        but collaborating with a dedicated team cannot be matched.</p>
+                    <br />
+                    <p> Skills/Services: JavaScript, ECMAScript 6, HTML5, CSS3, UX/UI Design, React, PostgreSQL, Express.</p>
+                    <br />
+                    <p>Clients understand that a poorly designed, functional app--even if it's game-changing--will only be half 
+                        as successful as it could be if it were well-designed. As a designer and a developer,
+                        my job is to 1) help clients attain their wants/needs, and 2) make their project
+                        look good. As a fullstack developer, I can bring your site to life by setting up a server
+                        and design the frontend to your specifications. You'll be involved throughout the process
+                        so that you can feel confident you're getting exactly what you want.</p>
+                    <br />
+                    <p>After graduating from Bemidji State University with three Bachelors 
+                        and a minor, I began relearning web development and followed my interests 
+                        into game and software development. After almost two years of Udemy courses 
+                        and tutorial hell on YouTube and freecodecamp.org, I felt like I was only
+                        placing pieces of a much larger puzzle together while being unable to see the larger 
+                        picture. After researching bootcamps, curriculums, and job markets in Minneapolis and 
+                        Winnipeg, I made the commitment enrolled in Thinkful's engineering immersion program.</p>
+                    <br />
+                    <p>When I'm not coding or studying new languages/frameworks, I can be found 
+                        butchering the German language, running it down Summoner's Rift in 
+                        <em>League of Legends</em>, saving Tamriel in <em>Elder Scrolls 
+                        Online</em>, or incorrectly sequencing my plays in <em>Magic: The 
+                        Gathering</em>.</p>
+                    <br />
+                </div>
+            </div>
+            <!-- <div id="knowledge-container"> 
+                <p>
+                <div id="languages">
+                    <h3>Languages:</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>ECMAScript 6</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+                <div id="skills">
+                    <h3>Other:</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>PostgreSQL</li>
+                        <li>Mocha</li>
+                        <li>Chai</li>
+                    </ul>
+                </div>
+            </div> -->
+        </section>
+
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio">
+            <div id ="projects">
+                <h2>Portfolio</h2>
+                <h5>(Click project title to see details about the project.)</h5>
+                <br />
+                <br />
+                <div class="project-images">
+                    <div id="local-library">
+                        <img src="./images/project-local-library-screenshot.JPG" alt='screenshot of local lib project' />
+                        <p><a href="./projects.html#local-library">Project: Local Library</a></p>
+                    </div>
+                    <div id='decoder-ring'>
+                        <img src='./images/decoder-ring-img.png' alt="screenshot of decoder ring app"/>
+                        <p><a href="./projects.html#decoder-ring">Project: Decoder Ring</a></p>
+                    </div>
+                    <div id="pomodoro-timer">    
+                        <img src="./images/pomodoro-img.jpg" alt="screenshot of future Pomodoro app"/>
+                        <p><a href="./projects.html#pomodoro-timer">Project: Pomodoro Timer</a></p>
+                    </div>
+                    <div id="dnd">    
+                        <img src='./images/dnd-img.jpg' alt="screenshot of future DND app"/>
+                        <p><a href="./projects.html#dnd">Project: D&D Browser Game</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+
+        <br />
+        <br />
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xeqpdror" method="post">
+                Name:
+                <br />
+                <label for="name">
+                <input id="name" name="name" required type="text" placeholder="Enter name"/>
+                </label>
+                <br />
+                <br />
+                Email:
+                <br />
+                <label for="email">
+                <input id="email" name="email" required type="email" placeholder="Enter email"/> 
+                </label>
+                <br />
+                <br />
+
+                Your Message:
+                <br />
+                <label for="content">
+                </label>
+                <textarea id="content" name="content" 
+                    cols="20" rows="7" placeholder="Like my page? Disliked it? Let me know."></textarea>
+                <br />
+                <button type="submit">Submit</button>
+            </form>
+            <br />
+            <div class='socials'>
+                <h3>You can also catch me at any of the following:</h3>
+                <div>
+                    <p><a href="mailto:ahotzler@gmail.com">Email</a></p>
+                    <p><a href="https://linkedin.com/in/andyhotzler" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://twitter.com/bytesizeculture" target="_blank">Twitter</a></p>
+                    <p><a href="https://github.com/ahotzler25" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>© Andy Hotzler, 2021.</p> 
+        <p>All Rights Reserved.</p>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
