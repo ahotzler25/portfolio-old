@@ -30,12 +30,13 @@ header h1 {
 
 /* Style the hamburger menu */
 
+/* This doesn't seem to do anything */
 .topnav a .icon {
     display: block;
     position: relative;
 }
 
-/* Add a grey background color on mouse-over */
+/* Add a steelblue background color on mouse-over */
 #myLinks a:hover {
     background-color: steelblue;
     color: white;
@@ -60,9 +61,8 @@ header h1 {
 #hamburger-menu {
     position: absolute;
     right: 5%;
-    top: 20%;
+    top: 27%;
     width: 10%;
-    /* height: auto; */
 }
 
 /* Style the navigation menu */
@@ -84,17 +84,16 @@ header h1 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    /* display: inline-block; */
 }
 
 /* MAIN CSS */
 /*          */
 main {
-    background-color: #f5f5f5;
+    /* Change background color later; easier to see this way */
+    background-color: #cccccc;
 }
 
 section {
-    /* border-bottom: 1px solid steelblue; */
     margin-bottom: 10px;
     padding: 10px 20px 0 20px;
 }
@@ -104,18 +103,18 @@ h2, h3, h4, h5, h6 p, li, a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
 }
 
 #projects img {
     /* display: block; */
     /* width: 100%; */
     padding-bottom: 20px;
-}
-
-#local-library, #decoder-ring, #pomodoro-timer, #dnd {
-    display: block;
-    width: 100%;
 }
 
 h2 {
@@ -130,11 +129,6 @@ h6 {
 }
 
 
-p {
-    font-size: 18px;
-}
-
-
 /* * * * * * * * * * */
 /* PROJECTS SECTION */
 /* * * * * * * * * */
@@ -146,9 +140,6 @@ p {
     color: #444;
     cursor: pointer;
     padding: 10px;
-    width: 80%;
-    text-align: center;
-    outline: none;
     font-size: 15px;
 }
 
@@ -159,28 +150,19 @@ p {
     background-color: #f1f1f1;
 }
 
-.project-desc {
-    display: block;
-}
 
 .project-images a:hover {
     background: steelblue;
 }
 
-.project-desc p {
+.content p {
     text-align: left;
-    font-size: 16px;
-    /* padding-right: 10px; */
 }
 
 div h3 {
     font-size: 25px;
     padding: 10px 0 10px 0;
     text-align: center;
-}
-
-.github-repo {
-    padding-top: 20px;
 }
 
 .socials ul {
@@ -235,64 +217,25 @@ button {
 @media all and (min-width: 768px) {
 
     div #hamburger-menu {
-        display: block;
-        width: 10%;
-        text-align: center;
+        display: none;
+        /* width: 10%;
+        text-align: center; */
     }
     
+    .topnav #myLinks {
+        display: flex;
+    }
+
     #myLinks a {
         padding: 0;
         display: inline-block;
         text-align: center;
     }
 
-    main {
-        width: 100%;
-        /* padding: 0 30px 0 30px; */
-    }
-
-    div {
-        display: flex;
-    }
-
+    /* What is this for? */
     #about-container {
         display: flex;
         flex-direction: row;
-        width: 100%;
-    }
-    
-    .left-column {
-        display: inline-block;
-        order: 1;
-        width: 70%;
-        padding: 20px 20px 0 0;
-    }
-    
-    .right-column {
-        display: inline-block;
-        order: 2;
-        width: 30%;
-    }
-    
-    .portfolio {
-        display: inline-flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    
-    .project-images #local-library #decoder-ring #pomodoro-timer, #dnd {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    .project-images img {
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-
-    .project-desc p {
         width: 100%;
     }
 
@@ -301,7 +244,6 @@ button {
     }
 
     #projects {
-        display: flex;
         flex-direction: column;
         width: 100%;
         border: none;
@@ -315,14 +257,14 @@ button {
         width: 50%;
     }
 
-    footer {
+    /* footer {
         width: 100%;
-        /* height: 100%; */
+        height: 100%;
         margin-top: 0;
         padding-top: 0;
         position: fixed;
         bottom: 0;
-    }
+    } */
 }
 
 
