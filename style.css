@@ -12,10 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    background: #000;
-}
-
 header h1 {
     /* padding-left: 0px; */
     font-family: "Press Start 2P", cursive;
@@ -24,6 +20,7 @@ header h1 {
 
 #logo {
     font-size: 12px;
+    text-align: left;
 }
 
 
@@ -36,8 +33,7 @@ header h1 {
 /* Style the hamburger menu */
 
 /* Add a steelblue color on mouse-over */
-#myLinks a:hover, .socials a:hover {
-    /* background-color: steelblue; */
+#myLinks a:hover, .container-1 a:hover, .socials a:hover {
     color: steelblue;
 }
 
@@ -49,12 +45,6 @@ header h1 {
 
 a {
     text-decoration: none;
-    color: white;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-    background-color: black;
     color: white;
 }
 
@@ -91,7 +81,7 @@ a {
 body {
     background: url("./images/black-background.jpg");
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 10%), url("./images/black-background.jpg");
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("./images/black-background.jpg");
     text-align: center;
 }
 
@@ -101,6 +91,7 @@ h2, h3, h4, h5, h6 p, li, a {
 
 p {
     font-size: 18px;
+    color: white;
 }
 
 .container-1 {
@@ -128,7 +119,7 @@ h6 {
 
 .collapsible {
     background-color: #eee;
-    color: #444;
+    color: grey;
     cursor: pointer;
     padding: 10px;
     font-size: 15px;
@@ -138,11 +129,7 @@ h6 {
     padding: 10px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.container-1 a:hover {
-    background: steelblue;
+    color: white;
 }
 
 .container-1 img {
