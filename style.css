@@ -35,21 +35,21 @@ header h1 {
 
 /* Style the hamburger menu */
 
-/* This doesn't seem to do anything */
-a .icon {
-    position: relative;
-}
-
-/* Add a steelblue background color on mouse-over */
-#myLinks a:hover {
-    background-color: steelblue;
-    color: white;
+/* Add a steelblue color on mouse-over */
+#myLinks a:hover, .socials a:hover {
+    /* background-color: steelblue; */
+    color: steelblue;
 }
 
 #myLinks a {
     padding: 0;
     display: inline-block;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Style the active link (or home/logo) */
@@ -88,9 +88,11 @@ a .icon {
 
 /* MAIN CSS */
 /*          */
-main {
-    /* Change background color later; easier to see this way */
-    background-color: #cccccc;
+body {
+    background: url("./images/black-background.jpg");
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 10%), url("./images/black-background.jpg");
+    text-align: center;
 }
 
 h2, h3, h4, h5, h6 p, li, a {
@@ -153,32 +155,26 @@ h6 {
 }
 
 div h3 {
+    color: steelblue;
     font-size: 25px;
     padding: 10px 0 10px 0;
-    text-align: center;
 }
 
-.socials ul {
+.socials div {
     display: flex;
-    text-align: center;
     padding-bottom: 10px;
 }
 
-.socials h4 {
-    text-align: center;
-}
-
-.socials ul li {
-    list-style: none;
+.socials h3 {
+    font-size: 20px;
 }
 
 footer {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 20px;
     justify-content: center;
-    background-color: #000;
+    /* background: linear-gradient(black, 50%, rgb(29, 29, 29), black); */
     color: #fff;
     height: 50px;
 }
@@ -208,8 +204,6 @@ button {
 
     div #hamburger-menu {
         display: none;
-        /* width: 10%;
-        text-align: center; */
     }
 
     .topnav #myLinks {
