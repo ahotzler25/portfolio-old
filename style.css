@@ -36,8 +36,7 @@ header h1 {
 /* Style the hamburger menu */
 
 /* This doesn't seem to do anything */
-.topnav a .icon {
-    display: block;
+a .icon {
     position: relative;
 }
 
@@ -134,14 +133,10 @@ h6 {
 }
 
 .content {
-    padding: 0 18px;
+    padding: 10px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-}
-
-.container-1 {
-    text-align: center;
 }
 
 .container-1 a:hover {
@@ -196,7 +191,7 @@ form {
     width: 75%;
 }
 
-form button {
+button {
     width: 50%;
 }
 
