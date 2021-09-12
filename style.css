@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -22,6 +22,11 @@ header h1 {
     animation: logo-change 6s infinite;
 }
 
+#logo {
+    font-size: 12px;
+}
+
+
 @keyframes logo-change {
     0% { color: white; }
     50% { color: steelblue; }
@@ -40,10 +45,6 @@ header h1 {
 #myLinks a:hover {
     background-color: steelblue;
     color: white;
-}
-
-#myLinks {
-    display: flex;
 }
 
 #myLinks a {
@@ -93,11 +94,6 @@ main {
     background-color: #cccccc;
 }
 
-section {
-    margin-bottom: 10px;
-    padding: 10px 20px 0 20px;
-}
-
 h2, h3, h4, h5, h6 p, li, a {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -109,12 +105,6 @@ p {
 .container-1 {
     display: flex;
     flex-direction: column;
-}
-
-#projects img {
-    /* display: block; */
-    /* width: 100%; */
-    padding-bottom: 20px;
 }
 
 h2 {
@@ -150,9 +140,17 @@ h6 {
     background-color: #f1f1f1;
 }
 
+.container-1 {
+    text-align: center;
+}
 
-.project-images a:hover {
+.container-1 a:hover {
     background: steelblue;
+}
+
+.container-1 img {
+    width: 90%;
+    height: 75%;
 }
 
 .content p {
@@ -194,19 +192,11 @@ footer p {
     font-size: 14px;
 }
 
-.projects-page {
-    padding: 0 20px 0 20px;
-}
-
 form {
     width: 75%;
 }
 
-form #content {
-    width: 120%;
-}
-
-button {
+form button {
     width: 50%;
 }
 
@@ -215,38 +205,26 @@ button {
 /* MEDIA QUERY: RESPONSIVE DESIGN   */
 /*                                  */
 @media all and (min-width: 768px) {
+    
+    #logo {
+        text-align: center;
+        font-size: 25px;
+    }
 
     div #hamburger-menu {
         display: none;
         /* width: 10%;
         text-align: center; */
     }
-    
+
     .topnav #myLinks {
         display: flex;
-    }
-
-    #myLinks a {
         padding: 0;
-        display: inline-block;
         text-align: center;
-    }
-
-    /* What is this for? */
-    #about-container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
     }
 
     h5 {
         text-align: center;
-    }
-
-    #projects {
-        flex-direction: column;
-        width: 100%;
-        border: none;
     }
 
     form {
@@ -257,20 +235,19 @@ button {
         width: 50%;
     }
 
-    /* footer {
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
-        padding-top: 0;
-        position: fixed;
-        bottom: 0;
-    } */
-}
+    .container-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .container-1 > div {
+        flex-basis: 50%;
+    }
 
-
-@media all and (min-width: 1066px) {
-    .project-images img {
-        width: 75%;
-        height: 300px;
+    .container-1 img {
+        width: 80%;
+        height: 75%;
     }
 }
