@@ -99,10 +99,10 @@ p {
     flex-direction: column;
 }
 
-h2 {
+.container-1 h2 {
     text-align: center;
     font-size: 32px;
-    padding-top: 20px;
+    padding: 50px 0 20px 0;
     color: steelblue;
 }
 
@@ -123,6 +123,11 @@ h6 {
     cursor: pointer;
     padding: 10px;
     font-size: 15px;
+}
+
+.project {
+    padding-bottom: 20px;
+    justify-content: space-evenly;
 }
 
 .content {
@@ -213,21 +218,17 @@ button {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        text-align: center;
     }
     
     .container-1 > div {
         flex-basis: 50%;
+        padding: 0;
     }
 
     .container-1 img {
         width: 80%;
         height: 60%;
     }
-
-    /* form {
-        width: 50%;
-    } */
 
     form #name, #email {
         width: 50%;
@@ -236,5 +237,12 @@ button {
     .container #contact{
         text-align: right;
         color: green;
+    }
+
+    @media all and (min-width: 1024px) {
+        .container-1 > div {
+            flex-basis: 33%;
+            padding: 0;
+        }
     }
 }
