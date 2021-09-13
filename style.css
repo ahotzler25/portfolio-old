@@ -133,8 +133,8 @@ h6 {
 }
 
 .container-1 img {
-    width: 90%;
-    height: 75%;
+    width: 60%;
+    height: 40%;
 }
 
 .content p {
@@ -224,6 +224,6 @@ button {
 
     .container-1 img {
         width: 80%;
-        height: 75%;
+        height: 60%;
     }
 }
