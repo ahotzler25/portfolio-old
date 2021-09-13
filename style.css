@@ -170,8 +170,14 @@ footer p {
     font-size: 14px;
 }
 
+.container {
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+
 form {
-    width: 75%;
+    width: 50%;
 }
 
 button {
@@ -203,14 +209,6 @@ button {
         text-align: center;
     }
 
-    form {
-        width: 50%;
-    }
-
-    form #name, #email {
-        width: 50%;
-    }
-
     .container-1 {
         display: flex;
         flex-direction: row;
@@ -225,5 +223,18 @@ button {
     .container-1 img {
         width: 80%;
         height: 60%;
+    }
+
+    /* form {
+        width: 50%;
+    } */
+
+    form #name, #email {
+        width: 50%;
+    }
+
+    .container #contact{
+        text-align: right;
+        color: green;
     }
 }
