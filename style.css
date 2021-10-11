@@ -6,7 +6,11 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    color: white;
+    color: #98b0bd;
+}
+
+h1, h2, h3, h4, h5 {
+    color: steelblue;
 }
 
 html {
@@ -15,8 +19,11 @@ html {
 
 body {
     background-image: 
-        linear-gradient(to bottom, rgba(65, 65, 65, 0.25), rgba(12, 12, 12, 0.95)),
-        url("../images/black-background.jpg");
+        linear-gradient(to bottom, rgba(65, 65, 65, 0.25), rgba(12, 12, 12, 0.5)),
+        url("../images/constellation-dark.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 p {
@@ -37,13 +44,14 @@ nav h1 {
 }
 
 nav {
-    background-color: #141517;
+    background-color: #000;
     color: steelblue;
     padding-bottom: 10px;
 }
 
 .sub-logo, .cheat-code {
     display: inline;
+    color: #98b0bd;
 }
 
 .cheat-code {
