@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header h1 {
+    /* padding-left: 0px; */
+    font-family: "Press Start 2P", cursive;
+    animation: logo-change 6s infinite;
+}
+
+#logo {
+    font-size: 12px;
+    text-align: left;
+}
+
+
+@keyframes logo-change {
+    0% { color: white; }
+    50% { color: steelblue; }
+}
+
+
+/* Style the hamburger menu */
+
+/* Add a steelblue color on mouse-over */
+#myLinks a:hover, .container-1 a:hover, .socials a:hover {
+    color: steelblue;
+}
+
+#myLinks a {
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#hamburger-menu {
+    position: absolute;
+    right: 5%;
+    top: 27%;
+    width: 10%;
+}
+
+/* Style the navigation menu */
+.topnav {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* MAIN CSS */
+/*          */
+body {
+    background: url("./images/black-background.jpg");
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("./images/black-background.jpg");
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 p, li, a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1 h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 50px 0 20px 0;
+    color: steelblue;
+}
+
+h6 {
+    text-align: center;
+}
+
+
+/* * * * * * * * * * */
+/* PROJECTS SECTION */
+/* * * * * * * * * */
+
+/* Style the collapsible button/section */
+
+.collapsible {
+    background-color: #eee;
+    color: grey;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.project {
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.content {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    color: white;
+}
+
+.container-1 img {
+    width: 60%;
+    height: 40%;
+}
+
+.content p {
+    text-align: left;
+}
+
+div h3 {
+    color: steelblue;
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+}
+
+.socials div {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.socials h3 {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* background: linear-gradient(black, 50%, rgb(29, 29, 29), black); */
+    color: #fff;
+    height: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.contact-container {
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+
+form {
+    width: 50%;
+}
+
+button {
+    width: 50%;
+}
+
+
+
+/* MEDIA QUERY: RESPONSIVE DESIGN   */
+/*                                  */
+@media all and (min-width: 768px) {
+    
+    #logo {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    div #hamburger-menu {
+        display: none;
+    }
+
+    .topnav #myLinks {
+        display: flex;
+        padding: 0;
+        text-align: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .contact-container h5 {
+        text-align: center;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .container-1 > div {
+        flex-basis: 50%;
+        padding: 0;
+    }
+
+    .container-1 img {
+        width: 80%;
+        height: 70%;
+    }
+
+    form #name, #email {
+        width: 50%;
+    }
+
+    @media all and (min-width: 1024px) {
+        .container-1 > div {
+            flex-basis: 33%;
+            padding: 0;
+        }
+    }
+}

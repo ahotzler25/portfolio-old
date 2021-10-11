@@ -2,88 +2,223 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy Hotzler | Software Engineer</title>
+    <title>Testing Purposes</title>
     <script src="https://kit.fontawesome.com/3d6b468046.js" crossorigin="anonymous"></script>
-    <link href="./style.css" rel="stylesheet" type="text/css" />
-    
+    <link href="./style.css" rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<body id='homepage'>
+    <!-- <main> -->
+        <div class='wrapper'>
+            <nav role="navigation">
+                <h1 class='logo'>Andy Hotzler</h1>
+                <h4 class='sub-logo'>Game Dev | QA</h4>
+                <h4 class='cheat-code'>UUDDLRLRBA</h4>
+                <br />
+                <br />
+                <ul class='menu'>
+                    <a class='menuLink' href='#projects'>Projects</a>
+                    <a class='menuLink' href='#about'>About</a>
+                    <a class='menuLink' href='#skills'>Skills</a>
+                    <a class='menuLink' href='#socials'>Socials</a>
 
-<body id="home">
-    <!-- Header/Nav section -->
-    <header>
-        <nav>
-            <div class="topnav">
-                <a href="#home" class="active" id='logo'><h1>Andy Hotzler</h1></a>
+                    <a class='menuLink' href="https://linkedin.com/in/andyhotzler" target="_blank">LinkedIn</a>
+                    <a class='menuLink' href="https://github.com/ahotzler25" target="_blank">GitHub</a>
+                    <a class='menuLink' href="https://twitter.com/bytesizeculture" target="_blank">Twitter</a>
+
+                </ul>
+                <br />
+                <br />
+                <a id='email' href='mailto:ahotzler@gmail.com'>ahotzler@gmail.com </a>
+            </nav>
+        
+            
+            <!-- PORTFOLIO SECTION -->
+            <aside>
+                <div class='project-container' id='projects'>
+                    <h2>PORTFOLIO</h2>
+                    <div class='project'>
+                        <img src='../images/bull-cow-game.PNG' alt='intro screen for bull cow game' />
+                        <section class='project-desc'>
+                            <h3>Bull Cow: The Word-Guessing Game</h3>
+                            <section class='github-links'>
+                                <h4>Coming soon to itch.io!</h4>
+                                <h4><a href="https://github.com/ahotzler25/bull-cow-game" target="_blank">GitHub Repo</a></h4>
+                            </section>
+                            <p>DESCRIPTION: Simple word-guessing game built in Unreal with C++. Project started in GameDev.TV's "Unreal Engine C++ Developer's" course, but I added additional features to clean up the UI and improve UX to make guessing more enjoyable and slightly more intuitive.</p>
+                        </section>
+                    </div>
+                    <div class='project' >
+                        <img src='../images/thewanderer.PNG' alt="screenshot of The Wanderer intro" />
+                        <section class='project-desc'>
+                            <h3>The Wanderer</h3>
+                            <section class='github-links'>
+                                <h4>Additional Content Being Added</h4>
+                                <h4><a href="https://github.com/ahotzler25/thewanderer" target="_blank">GitHub Repo</a></h4>
+                            </section>
+                            <p>DESCRIPTION: Simple old-school text adventure with branching storylines, 
+                                alternate endings, and consequences for player choices. Built in Unity/C#.</p>
+                        </section>
+                    </div>
+                    <div class="project">    
+                        <img src='../images/dnd-img.jpg' alt="screenshot of future DND app" />
+                        <section class='project-desc'>
+                            <h3>D&D Browser Game</h3>
+                            <section class='github-links'>
+                                <h4>In Progress</h4>
+                            </section>
+                            <p>DESCRIPTION: Single-player version of D&D built with branching storylines, selection of characters, and a wide array of items that fits your personal playstyle. Built with JavaScript, HTML, and CSS.</p>
+                        </section>
+                    </div>
+                    <div class='project' >
+                        <img src="../images/dashboardList.PNG" alt="screenshot of rest reservation app"/>
+                        <br />
+                        <section class='project-desc'>
+                            <h3>Restaurant Reservation</h3>
+                            <section class='github-links'>
+                                <h4><a href="https://front-end-lime-one.vercel.app/dashboard" target="_blank">Live App</h4>
+                                <h4><a href="https://github.com/ahotzler25/ProjectRestaurantReservation" target="_blank">GitHub Repo</a></h4>
+                            </section>
+                            <p>DESCRIPTION: Fullstack application for restaurant employees to track online and phone-in reservations for customers. Prevents overbooking. Maintains future and past reservations. Built with JavaScript, React, postgresQL, Express.JS, and Bootstrap.</p>
+                        </section>
+                    </div>
+                    <div class='project'>
+                        <img src='../images/decoder-ring-img.png' alt="screenshot of decoder ring app"/>
+                        <section class='project-desc'>
+                            <h3>Decoder Ring</h3>
+                            <section class='github-links'>
+                                <h4><a href="https://ahotzler25.github.io/project-decoder-ring/" target="_blank">Live App</a></h4>
+                                <h4><a href="https://github.com/ahotzler25/project-decoder-ring" target="_blank">GitHub Repo</a></h4>
+                            </section>
+                            <p>DESCRIPTION: A fullstack dummy website to mimic a library's administrative database. 
+                            The HTML and CSS were provided by the course, requiring only 
+                            the JavaScript be submitted. The completed project provided a 
+                            home page for general statistics regarding rented books and 
+                            popular categories. The "Stats by Book" page provided a list 
+                            of every book housed by the library, with a history of recent 
+                            borrowers, the author, genre, and if is is currently returned 
+                            or rented out. Finally, the "Stats by Account" page listed every 
+                            library member alphabetically by last name, with a profile picture, 
+                            general information about the member, as well as how many total 
+                            books have been borrowed by the member.</p>
+                            
+                            <p>This project was designed to test my ability to 
+                            create functions, higher order functions, various JS methods 
+                            (such as find, filter, and map), and utilize string literals. 
+                            I was to link the three databases (each styled as an object 
+                            within a .js file) and output the results onto the web app. A 
+                            total of 14 functions across 3 files were necessary to complete, 
+                            with an additional helper function required to assist in at least 
+                            one of the other functions.</p>
+                        </section>
+                    </div>
+                    <div class="project" >
+                        <img src="../images/pomodoro-img.jpg" alt="screenshot of future Pomodoro app"/>
+                        <section class='project-desc'>
+                            <h3><a href="../pages/projects.html#pomodoro-timer">Pomodoro Timer</a></h3>
+                            <div class='github-links'>
+                                <h4><a href="https://github.com/ahotzler25/project-pomodoro-timer" target="_blank">GitHub Repo</a></h4>
+                            </div>
+                            <p>DESCRIPTION: The project consists of three cipher, each unique to the other:</p>
+                            <p>The Caesar Shift is a type of substitution cipher originally used by 
+                                Julius Caesar to protect messages of military significance. It relies 
+                                on taking the alphabet and "shifting" letters to the right or left, 
+                                based on the typical alphabetic order.</p>
+                            <p>The Polybius Square is a cipher that is achieved by arranging a typical 
+                                alphabet into a grid. Each letter is represented through a coordinate. 
+                                For example, in the above table, the letter "B" would be represented 
+                                by the numerical pair "21".</p>
+                            <p>The Substitution Cipher requires a standard alphabet and a substitution 
+                                alphabet. Letters from the standard alphabet will be transposed to the 
+                                standard alphabet. This cipher requires that the recipient have the 
+                                substitution alphabet, otherwise it will be difficult for them to decode 
+                                the message.</p>
+                        </section>
+                    </div>
+                    <div class="project">
+                        <img src="../images/project-local-library-screenshot.JPG" alt='screenshot of local lib project' />
+                        <section class='project-desc'>
+                            <h3>Local Library</h3>
+                            <section class='github-links'>
+                                <h4><a href="https://ahotzler25.github.io/project-local-library/public/index.html" target="_blank">Live App</a></h4>
+                                <h4><a href="https://github.com/ahotzler25/project-local-library" target="_blank">GitHub Repo</a></h4>
+                            </section>
+                            <p>DESCRIPTION: This project is designed to test my ability to build complex algorithms. 
+                                It also focused on my ability to write unit tests with Mocha and Chai 
+                                to test algorithms. For all three ciphers I had to ensure to ignore the 
+                                letter casings and maintained spaces.</p>
+                            <p>For the Caesar Shift, I had to ensure a false was returned had a shift 
+                                of 0, 26 or greater, or a -26 or greater was submitted. I also had to 
+                                wrap around the alphabet in the event a letter shifted past "z" or 
+                                behind "a".</p>
+                            <p>For the Polybius Square, I had to combine the values of "i" and "j" to 
+                                maintain a perfect 5x5 square of alphabetical values. "thinkful" and 
+                                "thjnkful" would return the same value.</p>
+                            <p>For the Substitution cipher, I had to ensure a full 26 unique 
+                                characters were input for the given alphabet.</p>
+                        </section>
+                    </div>
+                </div>
+                <br />
+                <br />
                 
-            <!-- Navigation links (hidden by default) -->
-                    <div id="myLinks">
-                        <a href="./index.html">Home</a>
-                        <a href="./pages/about.html">About</a>
-                        <a href="./pages/projects.html">Projects</a>
-                        <!-- <a href="./portfolio.html">Portfolio</a> -->
-                        <a href="./pages/contact.html">Contact</a>
-                    </div>
-
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                    <div id="hamburger-menu">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
-            </div>            
-        </nav>
-    </header>
-
-    <!-- Main section -->
-    <main>
-
-        <!-- PORTFOLIO SECTION -->
-            <div class='container-1'>
-                <h2>Portfolio</h2>
-                <div class='project'>
-                    <a href="./pages/projects.html#the-wanderer"><img src="./images/thewanderer.PNG" alt="screenshot of The Wanderer intro"/></a>
-                    <p><a href="./pages/projects.html#the-wanderer">The Wanderer</a></p>
-                </div>
-                <div class="project">    
-                    <a href="./pages/projects.html#dnd"><img src='./images/dnd-img.jpg' alt="screenshot of future DND app"/></a>
-                    <p><a href="./pages/projects.html#dnd">D&D Browser Game</p></a>
-                </div>
-                <div class='project'>
-                    <a href="./pages/projects.html#restaurant-reservation"><img src="./images/dashboardList.PNG" alt="screenshot of rest reservation app"/></a>
-                    <p><a href="./pages/projects.html#restaurant-reservation">Restaurant Reservation</a></p>
-                </div>
-                <div class='project'>
-                    <a href="./pages/projects.html#decoder-ring"><img src='./images/decoder-ring-img.png' alt="screenshot of decoder ring app"/></a>
-                    <p><a href="./pages/projects.html#decoder-ring">Decoder Ring</a></p>
-                </div>
-                <div class="project">    
-                    <a href="./pages/projects.html#pomodoro-timer"><img src="./images/pomodoro-img.jpg" alt="screenshot of future Pomodoro app"/></a>
-                    <p><a href="./pages/projects.html#pomodoro-timer">Pomodoro Timer</a></p>
-                </div>
-                <div class="project">
-                    <a href="./pages/projects.html#local-library"><img src="./images/project-local-library-screenshot.JPG" alt='screenshot of local lib project' /></a>
-                    <p><a href="./pages/projects.html#local-library">Local Library</a></p>
-                </div>
-            </div>
-
-            <div class='socials'>
-                <h3>You can also catch me at any of the following:</h3>
-                <div class='social-link'>
-                    <p><a href="mailto:ahotzler@gmail.com">Email</a></p>
-                    <p><a href="https://linkedin.com/in/andyhotzler" target="_blank">LinkedIn</a></p>
-                    <p><a href="https://twitter.com/bytesizeculture" target="_blank">Twitter</a></p>
-                    <p><a href="https://github.com/ahotzler25" target="_blank">GitHub</a></p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-        <p>© Andy Hotzler, 2021.</p> 
-        <p>All Rights Reserved.</p>
-    </footer>
-    <script src="index.js"></script>
+                <section id='about'>
+                    <aside>
+                        <h2 id='about'>Get In Touch</h2>
+                        <p>I'm Andy Hotzler, a full-stack software engineer located in northern 
+                            Minnesota with my domestic shorthair, Dahlia. I specialize in React and enjoy
+                            studying UX/UI design. Two heads are always better than one,
+                            and I enjoy reviewing code with colleagues to not only see how it can be improved,
+                            but also how different approaches can reach a solution. Working alone has advantages,
+                            but collaborating with a dedicated team cannot be matched.</p>
+                        
+                        <p>After graduating from Bemidji State University with three Bachelors 
+                            and a minor, I began relearning web development and followed my interests 
+                            into game and software development. After almost two years of Udemy courses 
+                            and tutorial hell on YouTube and freecodecamp.org, I felt like I was only
+                            placing pieces of a much larger puzzle together while being unable to see the larger 
+                            picture. After researching bootcamps, curriculums, and job markets, I made the commitment 
+                            enrolled in Thinkful's engineering immersion program.</p>
+                        
+                        <p>When I'm not coding or studying new languages/frameworks, I can be found 
+                            butchering the German language, running it down Summoner's Rift in 
+                            <em>League of Legends</em>, saving Tamriel in <em>Elder Scrolls 
+                            Online</em>, or incorrectly sequencing my plays in <em>Magic: The 
+                            Gathering</em>.</p>
+                    </aside>
+                </section>
+                <section id='skills'>
+                    <h2>Skills</h2>
+                    
+                        <ul id='left-col'>
+                            <h3>Languages: </h3>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    
+                        <ul id='right-col'>
+                            <h3>Software: </h3>
+                            <li>Unreal Engine 4</li>
+                            <li>Unity</li>
+                            <li>JIRA</li>
+                            <li>4R</li>
+                            <li>5R</li>
+                        </ul>
+                    
+                </section>
+                <!-- FOOTER SECTION -->
+                <section id='footer'>
+                    <p>© Andy Hotzler, 2021.</p> 
+                    <p>All Rights Reserved.</p>
+                </section>
+            </aside>
+        </div> <!-- End of container div-->
+    <!-- </main> -->
 </body>
+<script src='./test.js'></script>
 </html>
