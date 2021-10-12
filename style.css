@@ -269,6 +269,10 @@ section #resume {
     nav {
         width: 15%;
     }
+    
+    p {
+        font-size: 18px;
+    }
 
     img {
         width: 18%; 
@@ -278,12 +282,18 @@ section #resume {
 }
 
 @media all and (min-width: 1200px) {
+    
+
     img {
         width: 15rem;
         height: auto;
     }
 
-    
+    aside #about {
+        display: inline-block;
+        width: 75%;
+    }
+
     .resume-image img {
         width: 25%;
         max-height: 100%;
