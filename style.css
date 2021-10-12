@@ -101,10 +101,9 @@ div {
     padding: 10px 0px;
 }
 
-#skills ul {
-    display: inline-flex;
+.project-container {
+    display: flex;
     flex-direction: column;
-    list-style: none;
 }
 
 img {
@@ -127,12 +126,8 @@ aside a {
 }
 
 .github-links {
-    display: block;
-}
-
-.github-links a {
-    display: inline;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
 }
 
 section #resume {
@@ -215,6 +210,10 @@ section #resume {
         flex-direction: column;
     }
 
+    .project-desc {
+        width: 65%;
+    }
+
     div #contact {
         display: flex;
         flex-direction: column;
@@ -228,10 +227,6 @@ section #resume {
     .github-links {
         display: flex;
         flex-direction: row;
-    }
-
-    .project-desc {
-        width: 65%;
     }
 
     .resume-image img {
