@@ -34,7 +34,7 @@ p {
 nav h1 {
     font-family: "Press Start 2P", cursive;
     animation: logo-change 6s infinite;
-    font-size: 20px;
+    font-size: 25px;
     padding-top: 10px;
 }
 
@@ -148,13 +148,6 @@ section #resume {
     height: 10%;
 }
 
-section #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-}
-
 #footer p {
     padding: 0;
     margin: 0;
@@ -174,6 +167,7 @@ section #footer {
     }
 
     nav {
+        text-align: left;
         width: 25%;
     }
 
@@ -185,10 +179,20 @@ section #footer {
 
     .sub-logo {
         font-size: 15px;
-        text-align: left;
     }
 
     .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .socials {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -199,10 +203,6 @@ section #footer {
         overflow: auto;
     }
 
-    div {
-        display: flex;
-        flex-direction: row;
-    }
 
     img {
         width: 25%; 
@@ -271,5 +271,11 @@ section #footer {
     img {
         width: 15rem;
         height: auto;
+    }
+
+    
+    .resume-image img {
+        width: 25%;
+        max-height: 100%;
     }
 }
