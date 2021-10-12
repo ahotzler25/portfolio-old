@@ -7,7 +7,7 @@
     <title>Testing Purposes</title>
     <script src="https://kit.fontawesome.com/3d6b468046.js" crossorigin="anonymous"></script>
     <link href="./style.css" rel='stylesheet' type='text/css' />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id='homepage'>
     <!-- <main> -->
@@ -21,16 +21,15 @@
                 <ul class='menu'>
                     <a class='menuLink' href='#projects'>Projects</a>
                     <a class='menuLink' href='#about'>About</a>
-                    <a class='menuLink' href='#skills'>Skills</a>
-                    <a class='menuLink' href='#socials'>Socials</a>
-
-                    <a class='menuLink' href="https://linkedin.com/in/andyhotzler" target="_blank">LinkedIn</a>
-                    <a class='menuLink' href="https://github.com/ahotzler25" target="_blank">GitHub</a>
-                    <a class='menuLink' href="https://twitter.com/bytesizeculture" target="_blank">Twitter</a>
-
+                    <a class='menuLink' href='#resume'>Resume</a>
                 </ul>
                 <br />
                 <br />
+                <ul>
+                    <a class='fa fa-linkedin' href="https://linkedin.com/in/andyhotzler" target="_blank"></a>
+                    <a class='fa fa-github' href="https://github.com/ahotzler25" target="_blank"></a>
+                    <a class='fa fa-twitter' href="https://twitter.com/bytesizeculture" target="_blank"></a>
+                </ul>
                 <a id='email' href='mailto:ahotzler@gmail.com'>ahotzler@gmail.com </a>
             </nav>
         
@@ -118,9 +117,9 @@
                         <img src="./images/pomodoro-img.jpg" alt="screenshot of future Pomodoro app"/>
                         <section class='project-desc'>
                             <h3><a href="../pages/projects.html#pomodoro-timer">Pomodoro Timer</a></h3>
-                            <div class='github-links'>
+                            <section class='github-links'>
                                 <h4><a href="https://github.com/ahotzler25/project-pomodoro-timer" target="_blank">GitHub Repo</a></h4>
-                            </div>
+                            </section>
                             <p>DESCRIPTION: The project consists of three cipher, each unique to the other:</p>
                             <p>The Caesar Shift is a type of substitution cipher originally used by 
                                 Julius Caesar to protect messages of military significance. It relies 
@@ -189,36 +188,23 @@
                             Gathering</em>.</p>
                     </aside>
                 </section>
-                <section id='skills'>
-                    <h2>Skills</h2>
-                    
-                        <ul id='left-col'>
-                            <h3>Languages: </h3>
-                            <li>C++</li>
-                            <li>C#</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    
-                        <ul id='right-col'>
-                            <h3>Software: </h3>
-                            <li>Unreal Engine 4</li>
-                            <li>Unity</li>
-                            <li>JIRA</li>
-                            <li>4R</li>
-                            <li>5R</li>
-                        </ul>
-                    
+                <section id='resume'>
+                    <h2>Resume</h2>
+                        <a class='resume-image' target='_blank' href='images/resume-page-1.png' alt='personal resume'>
+                            <img id='resume-image-1' src='images/resume-page-1.png' alt='personal resume' />
+                        </a>
+                        <a class='resume-image' target='_blank' href='images/resume-page-2.png' alt='personal resume'>
+                            <img id='resume-image-2' src='images/resume-page-2.png' alt='personal resume' />
+                        </a>
                 </section>
                 <!-- FOOTER SECTION -->
-                <section id='footer'>
+                <footer id='footer'>
                     <p>© Andy Hotzler, 2021.</p> 
                     <p>All Rights Reserved.</p>
-                </section>
+                </footer>
+            </div> <!-- End of container div-->
             </aside>
-        </div> <!-- End of container div-->
     <!-- </main> -->
 </body>
-<script src='./test.js'></script>
+<!-- <script src='./test.js'></script> -->
 </html>

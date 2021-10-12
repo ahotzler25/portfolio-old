@@ -77,7 +77,6 @@ a:hover {
     animation: a-change 6s infinite;
 }
 
-
 @keyframes a-change {
     0% { color: white; }
     25% { color: steelblue; }
@@ -85,27 +84,21 @@ a:hover {
     75% { color: steelblue;}
 }
 
-/* THIS MAKES LINKS MOVE LEFT TO RIGHT */
-
-
-/* nav a:hover {
-    animation: 1s linear 0s infinite alternate move_eye;
-} */
-
-/* @keyframes move_eye { 
-    from { 
-        margin-left: 0%; 
-        color: white;
-    }
-     
-    to { 
-        margin-left: 10%; 
-        color: steelblue;
-    } 
-} */
+.fa {
+    /* padding: 20px; */
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
 
 .wrapper {
     text-align: center;
+}
+
+div {
+    padding: 10px 0px;
 }
 
 #skills ul {
@@ -142,13 +135,29 @@ aside a {
     flex-direction: row;
 }
 
-#footer {
+section #resume {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.resume-image img {
+    min-height: 100px;
+    max-height: 500px;
+    width: 48%;
+    height: 10%;
+}
+
+section #footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
 }
 
 #footer p {
+    padding: 0;
+    margin: 0;
     text-align: center;
     font-size: 18px;
 }
@@ -225,13 +234,19 @@ aside a {
         width: 65%;
     }
 
-    #footer {
+    .resume-image img {
+        width: 40%;
+        height: 25%;
+    }
+
+    section #footer {
         background-color: black;
         /* background-color: #141517; */
         min-height: 75px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
 
     #footer p {
